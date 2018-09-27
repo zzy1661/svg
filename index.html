@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.c2 {
+				fill: rosybrown;
+			}
+			
+			.hidden {
+				display: none;
+			}
+			
+			svg.blue {
+				--color: blue;
+			}
+			
+			svg.red {
+				--color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<svg width="200" height="200" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<circle cx="100" cy="100" r="100" fill="#529fca" />
+		</svg>
+		<svg width="200" height="200" viewBox="100 100 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<circle cx="100" cy="100" r="100" class="c2" />
+		</svg>
+		<svg>
+			<text x="5" y="30" style="fill: green">A nice text</text>
+		</svg>
+
+		<svg>
+			<text x="5" y="70" style="fill: green; font-family: Courier New">
+    A nice text
+  </text>
+		</svg>
+		<hr />
+		<svg class="hidden">
+			<symbol id="rectangle" viewBox="0 0 20 20">
+				<rect x="0" y="0" width="300" height="300" fill="var(--color)" />
+			</symbol>
+		</svg>
+		<svg class="red">
+			<use xlink:href="#rectangle" href="#rectangle" />
+		</svg>
+
+		<svg class="blue">
+			<use xlink:href="#rectangle" href="#rectangle" />
+		</svg>
+	</body>
+
+</html>
