@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			circle {
+				stroke-width: 1em;
+			}
+			#bar {
+				stroke: #d1d3d7;
+			}
+			#thumb {
+				stroke: #00a5e0;
+				stroke-dashoffset:100;
+			}
+		</style>
+		<script src="js/snap.svg-min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="cont" data-pct="100">
+			<svg id="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<circle id="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="100" stroke-dashoffset="0"></circle>
+				<circle id="thumb" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="100" stroke-dashoffset="0"></circle>
+			</svg>
+		</div>
+		<script type="text/javascript">
+		 
+		</script>
+	</body>
+</html>
